@@ -13,12 +13,4 @@ document.querySelectorAll('.nav a').forEach(link => {
   });
 });
 
-// Back to top button
-document.querySelectorAll('a[href="#top"]').forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
 document.getElementById('year').textContent = new Date().getFullYear();
