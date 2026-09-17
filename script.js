@@ -13,4 +13,11 @@ document.querySelectorAll('.nav a').forEach(link => {
   });
 });
 
+// Event button handlers
+document.querySelectorAll('.event-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    alert('Coming soon, no information on this event yet.');
+  });
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();
