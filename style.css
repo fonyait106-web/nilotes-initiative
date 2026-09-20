@@ -69,6 +69,16 @@ blockquote{font-family:"Playfair Display",serif;font-size:clamp(28px,4vw,46px);l
 .event-status{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--olive);margin-bottom:16px}
 .event-description{font-size:16px;color:#5d584b;margin-bottom:24px;line-height:1.6}
 .event-btn{margin-top:10px}
+.modal{display:none;position:fixed;z-index:100;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.6);overflow-y:auto}
+.modal-content{background:white;margin:5% auto;padding:40px;border-radius:4px;max-width:800px;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+.modal-content h2{font-family:"Playfair Display",serif;font-size:36px;margin-bottom:8px;color:var(--ink)}
+.modal-subtitle{font-size:16px;color:var(--olive);margin-bottom:30px;font-weight:600}
+.modal-content h3{font-family:"Playfair Display",serif;font-size:22px;margin-top:24px;margin-bottom:12px;color:var(--ink)}
+.modal-content p{font-size:15px;color:#5d584b;line-height:1.7;margin-bottom:16px}
+.modal-note{background:#f9f6ee;padding:16px;border-left:3px solid var(--olive);margin-top:30px!important}
+.close{color:#999;float:right;font-size:28px;font-weight:bold;cursor:pointer;transition:.25s}
+.close:hover{color:var(--ink)}
+@media(max-width:700px){.modal-content{margin:20% auto;padding:24px}.modal-content h2{font-size:28px}.modal-content h3{font-size:18px}}
 .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .person{padding:32px;background:#f6f0df;border:1px solid var(--line)}.person .initials{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--olive);color:white;font-weight:800;margin-bottom:35px}.person h3{font-family:"Playfair Display",serif;font-size:25px}.person p{color:var(--muted);font-size:13px}.person.advisory{background:#fff}
 .person-photo{width:100%;height:400px;object-fit:cover;margin-bottom:20px;border-radius:4px;display:block}

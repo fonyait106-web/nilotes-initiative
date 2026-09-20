@@ -13,11 +13,24 @@ document.querySelectorAll('.nav a').forEach(link => {
   });
 });
 
-// Event button handlers
+// Event modal handlers
+const modal = document.getElementById('eventModal');
+const closeBtn = document.querySelector('.close');
+
 document.querySelectorAll('.event-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    alert('Coming soon, no information on this event yet.');
+    modal.style.display = 'block';
   });
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
 });
 
 document.getElementById('year').textContent = new Date().getFullYear();
