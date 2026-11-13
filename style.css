@@ -84,7 +84,7 @@ blockquote{font-family:"Playfair Display",serif;font-size:clamp(28px,4vw,46px);l
 .close{color:#999;float:right;font-size:28px;font-weight:bold;cursor:pointer;transition:.25s}
 .close:hover{color:var(--ink)}
 @media(max-width:700px){.modal-content{margin:20% auto;padding:24px}.modal-content h2{font-size:28px}.modal-content h3{font-size:18px}}
-.team-grid{display:grid;grid-template-columns:minmax(260px,340px) 1fr;gap:18px}
+.team-grid{display:grid;grid-template-columns:repeat(2,minmax(220px,300px)) 1fr;gap:18px}
 .person{padding:24px;background:#f6f0df;border:1px solid var(--line);border-radius:18px}.person .initials{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--olive);color:white;font-weight:800;margin-bottom:24px}.person h3{font-family:"Playfair Display",serif;font-size:25px}.person p{color:var(--muted);font-size:13px}.person.advisory{background:#fff;display:flex;flex-direction:column;justify-content:center;padding:32px}
 .person-photo{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;margin-bottom:18px;border-radius:14px;display:block}
 .contact{background:#f9f6ee}
@@ -96,7 +96,7 @@ blockquote{font-family:"Playfair Display",serif;font-size:clamp(28px,4vw,46px);l
 .location-text{font-size:16px;color:#5d584b;line-height:1.6}
 .cta{background:var(--olive-dark);color:white;padding:64px 0}.cta-inner{display:block}.cta h2{max-width:760px}.btn-light{background:#f3ecd8;color:var(--olive-dark)}.btn-light:hover{transform:translateY(-2px)}
 .footer{background:#242218;color:#d9d2b9;padding:55px 0 25px}.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding-bottom:45px}.footer-logo{width:84px;height:84px;border-radius:50%;object-fit:cover;margin-bottom:15px}.footer p{font-size:13px;color:#aaa38e}.footer-label{letter-spacing:2px;font-size:11px!important;font-weight:800!important;color:#d8c979!important;margin-top:5px}.copyright{border-top:1px solid #454133;padding-top:20px;font-size:11px;color:#77715f}
-@media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}.timeline{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}.person.advisory{grid-column:1/-1}.cards{grid-template-columns:repeat(2,1fr)}.timeline{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.nav{display:none;position:absolute;top:78px;left:0;width:100%;background:var(--paper);padding:20px;flex-direction:column;gap:16px;border-bottom:1px solid var(--line)}.nav.open{display:flex}.menu-toggle{display:block}.two-col,.story-grid,.mission-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.mission-mark{width:100px;height:100px;font-size:32px}.cards,.beneficiary-grid,.team-grid,.timeline,.footer-grid,.event-card{grid-template-columns:1fr}.card h3{margin-top:28px}.event-card{grid-template-columns:1fr}.event-image{min-height:300px}.event-info{padding:25px}.cta-inner{display:block}.cta .btn{margin-top:30px}.hero{min-height:780px}.hero h1{font-size:55px}.hero-text{font-size:16px}.section{padding:64px 0}.person-photo{max-width:420px}}
 
 /* ---- Terracotta accent (from the logo) ---- */
